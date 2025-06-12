@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.TangwongProject" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.TangWongProject" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.TangWongProject.SplashScreen" parent="Theme.SplashScreen">
+        <item name="postSplashScreenTheme">@style/Theme.TangWongProject</item>
+    </style>
 </resources>

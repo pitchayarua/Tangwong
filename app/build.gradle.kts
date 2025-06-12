@@ -64,7 +64,6 @@ android {
     productFlavors {
         create("dev") {
             isDefault = true
-
             dimension = "environment"
             applicationIdSuffix = ".dev"
             resValue("string", "app_name", "Tangwong dev")
@@ -76,7 +75,6 @@ android {
             dimension = "environment"
             applicationIdSuffix = ".staging"
             resValue("string", "app_name", "Tangwong staging")
-            buildConfigField("Boolean", "ENABLE_IN_DISTANCE", "false")
             buildConfigField("String", "ENVIRONMENT", "\"staging\"")
             buildConfigField(
                 "String",
@@ -89,7 +87,6 @@ android {
             dimension = "environment"
             applicationIdSuffix = ".uat"
             resValue("string", "app_name", "Tangwong UAT")
-            buildConfigField("Boolean", "ENABLE_IN_DISTANCE", "false")
             buildConfigField("String", "ENVIRONMENT", "\"uat\"")
             buildConfigField("String", "BASE_URL", "\"http://10.4.18.207/peawebsite-ws/api/\"")
         }
