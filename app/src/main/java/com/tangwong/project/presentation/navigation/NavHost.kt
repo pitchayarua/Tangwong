@@ -1,10 +1,10 @@
 package com.tangwong.project.presentation.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.core.splashscreen.SplashScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.tangwong.project.presentation.ui.screens.splash.SplashScreen
 
 @Composable
 fun TangWongNavHost(){
@@ -13,8 +13,8 @@ fun TangWongNavHost(){
         navController = navController,
         startDestination =  Screen.Splash.route
     ){
-        composable<Screen.Splash> {
-            Splash
+        composable(Screen.Splash.route) {
+            SplashScreen()
         }
     }
 }
